@@ -62,7 +62,7 @@ python manage.py makemigrations irisApp
 
 9. Run the Django development server using:
 ``` bash
- python manage.py runserver.
+ python manage.py runserver
  ```
 
 ## USAGE
