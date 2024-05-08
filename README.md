@@ -4,23 +4,25 @@
 
 iris/
 │
-│
-├──iris/
+├── iris/
 │
 ├── irisApp/
-│	├──	templates/irisApp/
-│   │	├── layout.html
-│   │	└── index.html
+│   ├── templates/
+│   │   └── irisApp/
+│   │       ├── layout.html
+│   │       └── index.html
 │   │
-│   └── static/irisApp/
-│   	├── index.js
-│   	└── styles.css
+│   └── static/
+│       └── irisApp/
+│           ├── index.js
+│           └── styles.css
 │
 ├── manage.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 └── LICENSE
+
 
 ## SETUP
 1. Clone this repository to your local machine.
