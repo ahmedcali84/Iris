@@ -1,27 +1,30 @@
-# Iris
+# Iris Classification Project
+This project is focused on building a web application for Iris classification using Django, a high-level Python web framework. The application utilizes machine learning algorithms to classify Iris flowers based on their sepal and petal dimensions.
+
+## About the Application
+The application allows users to input sepal and petal dimensions of an Iris flower and predicts its class using the KNeighboursClassifier algorithm. The front-end is designed using Bootstrap CSS for responsiveness.
+
 
 ## PROJECT STRUCTURES
 
 iris/
 │
-├── iris/
+├── iris/  # Django project directory
 │
-├── irisApp/
-│   ├── templates/
-│   │   └── irisApp/
-│   │       ├── layout.html
-│   │       └── index.html
+├── irisApp/  # Django app directory
+│   ├── templates/irisApp/  # HTML templates for the app
+│   │   ├── layout.html  # Base layout template
+│   │   └── index.html  # Home page template
 │   │
-│   └── static/
-│       └── irisApp/
-│           ├── index.js
-│           └── styles.css
+│   └── static/irisApp/  # Static files for the app
+│       ├── index.js  # JavaScript file for front-end logic
+│       └── styles.css  # CSS file for styling
 │
-├── manage.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── LICENSE
+├── manage.py  # Django management script
+├── requirements.txt  # Python dependencies
+├── README.md  # Project documentation (this file)
+├── .gitignore  # Git ignore file
+└── LICENSE  # Project license
 
 
 ## SETUP
