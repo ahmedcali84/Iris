@@ -3,44 +3,52 @@
 
 {% block body %}
 
-<div id="body-div">
-</div>
+{% if user.is_authenticated %}
 
-<div id="compose-div">
-	<H3 class="text-primary text-center">Flower Specifications</H3>
-	<div class="container">
-	<form id="form-control">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<label for="sepal_length" class="for_label">Sepal Length (cm): </label><input required id="sepal_length" class="form-control form-control-lg" placeholder="Enter Sepal Length (cm)" type="number" step="0.1" min="0.0">
+	<div id="compose-div">
+		<H3 class="text-primary text-center">Flower Specifications</H3>
+		<div class="container">
+		<form id="form-control">
+			<div class="form-group">
+				<div class="col-xs-4">
+					<label for="sepal_length" class="for_label">Sepal Length (cm): </label><input required id="sepal_length" class="form-control form-control-lg" placeholder="Enter Sepal Length (cm)" type="number" step="0.1" min="0.0">
+				</div>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<div class="col-xs-4">
-				<label for="sepal_width" class="for_label">Sepal Width (cm): </label><input required id="sepal_width" class="form-control form-control-lg" placeholder="Enter Sepal Width (cm)" type="number" step="0.1" min="0.0">
+			<div class="form-group">
+				<div class="col-xs-4">
+					<label for="sepal_width" class="for_label">Sepal Width (cm): </label><input required id="sepal_width" class="form-control form-control-lg" placeholder="Enter Sepal Width (cm)" type="number" step="0.1" min="0.0">
+				</div>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<div class="col-xs-4">
-				<label for="petal_length" class="for_label">Petal Length (cm): </label><input required id="petal_length" class="form-control form-control-lg" placeholder="Enter Petal Length (cm)" type="number" step="0.1" min="0.0">
+			<div class="form-group">
+				<div class="col-xs-4">
+					<label for="petal_length" class="for_label">Petal Length (cm): </label><input required id="petal_length" class="form-control form-control-lg" placeholder="Enter Petal Length (cm)" type="number" step="0.1" min="0.0">
+				</div>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<div class="col-xs-4">
-				<label for="petal_width" class="for_label">Petal Width (cm): </label><input required id="petal_width" class="form-control form-control-lg" placeholder="Enter Petal Width (cm)" type="number" step="0.1" min="0.0">
+			<div class="form-group">
+				<div class="col-xs-4">
+					<label for="petal_width" class="for_label">Petal Width (cm): </label><input required id="petal_width" class="form-control form-control-lg" placeholder="Enter Petal Width (cm)" type="number" step="0.1" min="0.0">
+				</div>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>Find Class</button>
-		</div>
-	
-	</form>
-</div>
-</div>
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>Find Class</button>
+			</div>
+		
+		</form>
+	</div>
+	</div>
+
+{% else %}
+
+	<div id="body-div">
+	</div>
+
+{% endif %}
+
+
 
 {% endblock %}
 

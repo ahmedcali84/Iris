@@ -1,7 +1,7 @@
 {% extends "irisApp/layout.html" %}
 
 {% block body %}
-
+<div class="register">
     <h2>Register</h2>
 
     {% if message %}
@@ -26,5 +26,7 @@
     </form>
 
     Already have an account? <a href="{% url 'login' %}">Log In here.</a>
+
+</div>
 
 {% endblock %}

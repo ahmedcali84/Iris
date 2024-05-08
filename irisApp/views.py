@@ -63,7 +63,6 @@ def getFlower(request , flower_id):
 	else:
 		return JsonResponse({"error": "Method Must Be Through GET"})
      
-@login_required
 @csrf_exempt
 def getPage(request , page):
 	if page == 'Iris Flowers':

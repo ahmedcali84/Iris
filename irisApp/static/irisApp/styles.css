@@ -37,7 +37,7 @@ body {
 	background-color: rgb(231, 230, 230);
 }
 
-#body-div {
+#body-div , .login , .register {
 	border-radius: 5px;
 	border: 1px solid black;
 	background-color: white;
