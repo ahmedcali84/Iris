@@ -7,9 +7,9 @@ project_name/
 │
 ├── irisApp
 │	├──	templates/irisApp/
-│   	├── layout.html
-│   	└── index.html
-│
+│   │	├── layout.html
+│   │	└── index.html
+│   │
 │   └── static/irisApp/
 │   	├── index.js
 │   	└── styles.css
@@ -35,7 +35,26 @@ cd irisApp
 ``` bash
 python irisClassification.py
 ```
-5. Run the Django development server using python manage.py runserver.
+
+6. go back to your iris project using:
+```bash 
+cd ..
+```
+
+7. Make Migrations to establish your models in irisApp app using this command:
+``` bash 
+python manage.py makemigrations irisApp
+```
+
+8. Migrate using :
+```bash 
+ python manage.py migrate
+ ```
+
+9. Run the Django development server using:
+``` bash
+ python manage.py runserver.
+ ```
 
 ## USAGE
 1. Access the web application at http://localhost:8000/ in your browser.
