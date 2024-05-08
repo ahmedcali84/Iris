@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="{% static 'irisApp/styles.css' %}" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> {% block title %} Iris Flower Classes {% endblock %} </title>
+	{% block script %}
+
+    {% endblock %}
+
+	<style>
+		#body {
+			background-image: url("{% static 'irisApp/images/iris1.jpg' %}");
+		}
+	</style>
+
+</head>
+
+<body id="body">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+		<a class="navbar-brand" href="#">Iris</a>
+		<div>
+			<ul class="navbar-nav mr-auto">
+				{% if user.is_authenticated %}
+					<li class="nav-item">
+						<a class='nav-link' href="#"><em>{{user.username}}</em></a>
+					</li>
+				{% endif %}
+					<li class="nav-item">
+						<a id="flowers" class='nav-link' href="{% url 'index' %}">Iris Flowers</a>
+					</li>
+				{% if user.is_authenticated %}
+					<li class="nav-item">
+						<a id="queryFlower" class='nav-link'>Find Flower Class</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                {% endif %}
+			</ul>
+		</div>
+	</nav>
+
+	<div class="body">
+		{% block body %}
+		{% endblock %}
+	</div>
+
+</body>
+
+</html>

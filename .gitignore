@@ -1,0 +1,14 @@
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore database files
+db.sqlite3
+
+#Ignore .vscode file
+.vscode/
+
+
