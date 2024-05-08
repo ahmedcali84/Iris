@@ -31,6 +31,8 @@ pip install -r requirements.txt
 5. run the classification file in `irisClassification.py` using this command:
 ``` bash 
 cd irisApp
+```
+``` bash
 python irisClassification.py
 ```
 5. Run the Django development server using python manage.py runserver.
