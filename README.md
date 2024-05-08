@@ -7,6 +7,8 @@ The application allows users to input sepal and petal dimensions of an Iris flow
 
 ## PROJECT STRUCTURES
 
+``` python
+
 iris/
 │
 ├── iris/  # Django project directory
@@ -25,7 +27,7 @@ iris/
 ├── README.md  # Project documentation (this file)
 ├── .gitignore  # Git ignore file
 └── LICENSE  # Project license
-
+```
 
 ## SETUP
 1. Clone this repository to your local machine.
