@@ -2,10 +2,12 @@
 
 ## PROJECT STRUCTURES
 
-project_name/
-├── iris
+iris/
 │
-├── irisApp
+│
+├──iris/
+│
+├── irisApp/
 │	├──	templates/irisApp/
 │   │	├── layout.html
 │   │	└── index.html
