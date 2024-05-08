@@ -49,4 +49,4 @@ python irisClassification.py
 
 
 ## LICENSE
-[LICENSE]
+[LICENSE](LICENSE)
