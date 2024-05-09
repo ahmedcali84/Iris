@@ -2,7 +2,7 @@
 
 This project is focused on building a web application for Iris classification using Django, a high-level Python web framework. The application utilizes machine learning algorithms to classify Iris flowers based on their sepal and petal dimensions.
 
-![Project Logo](irisApp/static/irisApp/images/irisClass.png)
+![Project Logo](irisApp/static/irisApp/images/IrisClass.jpg)
 
 ## About the Application
 The application allows users to input sepal and petal dimensions of an Iris flower and predicts its class using the KNeighboursClassifier algorithm. The front-end is designed using Bootstrap CSS for responsiveness.
