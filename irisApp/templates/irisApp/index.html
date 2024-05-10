@@ -41,10 +41,12 @@
 	</div>
 	</div>
 
-{% else %}
-
 	<div id="body-div">
 	</div>
+
+{% else %}
+
+	<a href="{% url 'login' %}">Login</a> Or <a href="{% url 'register' %}">Register</a>
 
 {% endif %}
 
