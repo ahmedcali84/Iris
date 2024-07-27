@@ -28,7 +28,6 @@ def applyTypes(row):
 		return "virginica"
 	
 df['type'] = df.apply(applyTypes, axis=1)
-
 print(df.head())
 
 # Dependent Variables
@@ -74,7 +73,6 @@ print(f"Classification Report: \n{classReport}")
 the model lets do Cross-Validation"""
 
 knnCrossVal = KNeighborsClassifier()
-
 model2 = cross_val_score(knnCrossVal, X , y , cv=6)
 
 print(f"Scores: {model2}")
