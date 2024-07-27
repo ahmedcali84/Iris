@@ -12,8 +12,8 @@ class IrisTestCase(TestCase):
 		model = loadModel()
 		predict = model.predict([[2,3,4,5]])
 		user = User.objects.get(username="axmed")
-		IrisModel.objects.create(user = user , sepal_length = 2, sepal_width = 3, petal_length = 4, petal_width = 5, prediction = "setosa")
+		IrisModel.objects.create(user = user , sepal_length = 2, sepal_width = 3, petal_length = 4, petal_width = 5, prediction = "virginica")
 		iris = IrisModel.objects.filter(user=user).first()
-		print(iris.prediction , predict)
-		self.assertEqual(str(iris.prediction) == str(predict[0]))
+		print(iris.prediction, predict)
+		self.assertEqual(str(iris.prediction), str(predict[0]))
 		
