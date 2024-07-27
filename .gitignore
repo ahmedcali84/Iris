@@ -13,6 +13,9 @@ db.sqlite3
 .vscode/
 
 
+static/irisApp/images
+
+
 =======
 # Byte-compiled / optimized / DLL files
 __pycache__/
