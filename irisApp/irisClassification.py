@@ -31,7 +31,7 @@ df['type'] = df.apply(applyTypes, axis=1)
 print(df.head())
 
 # Dependent Variables
-X = df[[x for x in data['feature_names']]]
+X = pd.DataFrame(data = df[[x for x in data['feature_names']]], columns=columns)
 print(X.info())
 
 # independent Variables
