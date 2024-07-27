@@ -15,5 +15,5 @@ class IrisTestCase(TestCase):
 		IrisModel.objects.create(user = user , sepal_length = 2, sepal_width = 3, petal_length = 4, petal_width = 5, prediction = "setosa")
 		iris = IrisModel.objects.filter(user=user).first()
 		print(iris.prediction , predict)
-		self.assertFalse(str(iris.prediction) == str(predict[0]))
+		self.assertEqual(str(iris.prediction) == str(predict[0]))
 		
